@@ -37,9 +37,9 @@ class EntryPoint
         if (tempPassword.Length >= 8)
         {
 
-            for (int i = 0; i <= tempPassword.ToString()[tempPassword.ToString().Length]; i++)
+            for (int i = 0; i <= tempPassword.ToString().Length - 1; i++)
             {
-                if (tempPassword.ToString().Length - i >= 48 && tempPassword.ToString().Length - i <= 57)
+                if (tempPassword[i] >= 48 && tempPassword[i] <= 57)
                 {
                     passwordNumCount++;
                 }
@@ -49,9 +49,9 @@ class EntryPoint
                 }
             }
 
-            for (int j = 0; j <= tempPassword.ToString()[tempPassword.ToString().Length]; j++)
+            for (int j = 0; j <= tempPassword.ToString().Length - 1; j++)
             {
-                if (tempPassword.ToString().Length - j >= 65 && (int)tempPassword.ToString().Length - j <= 90)
+                if (tempPassword[j] >= 65 && (int)tempPassword[j] <= 90)
                 {
                     passwordCaseCount++;
                 }
@@ -60,23 +60,18 @@ class EntryPoint
                     passwordCaseCount = passwordCaseCount;
                 }
             }
-            if(passwordCaseCount >= 1) { realPasswordCase = true; } else { realPasswordCase = false; }
-            if(passwordNumCount >= 1) { realPasswordNumber = true; } else { realPasswordNumber = false; }
-            if (realPasswordNumber && realPasswordCase)
+            
+            if (passwordNumCount >= 1 && passwordCaseCount >= 1)
             {
                 password = tempPassword;
             }
-            else if (!realPasswordCase)
-            {
-                password = "defaultpassword";
-            }
-            else if (!realPasswordNumber)
+            else if (passwordNumCount < 1 || passwordCaseCount < 1)
             {
                 password = "defaultpassword";
             }
 
         }
-        else if (tempPassword.Length < 8)
+        else if (tempPassword.Length < 7)
         {
             password = "defaultpassword";
         }
