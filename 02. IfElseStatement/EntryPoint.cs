@@ -69,13 +69,37 @@ class EntryPoint
 
         if(givenNum3.ToString()[givenNum3.ToString().Length - 3] == '3')
         {
-            Console.WriteLine($"Yes, the number {givenNum3} does have a 3 for the 3rd number!");
+            Console.WriteLine($"Yes, from left to right, the number {givenNum3} does have a 3 for the 3rd number!");
         }
         else
         {
-            Console.WriteLine($"No, the number {givenNum3} does not have a 3 as the 3rd number!" );
+            Console.WriteLine($"No, from left to right, the number {givenNum3} does not have a 3 as the 3rd number!" );
         }
         Console.WriteLine();
+
+        //Take two numbers and switch them if the 1st is greater than the 2nd
+        Console.WriteLine("Give me two numbers and I will put them in descending order!");
+        Console.Write("First number: ");
+        int givenTempNum4 = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Second number: ");
+        int givenTempNum5 = Convert.ToInt32(Console.ReadLine());
+
+        int compareOne = 0, compareTwo = 0;
+        if(givenTempNum4 > givenTempNum5)
+        {
+            compareOne = givenTempNum4;
+            compareTwo = givenTempNum5;
+        }
+        else
+        {
+            compareOne = givenTempNum5;
+            compareTwo = givenTempNum4;
+        }
+        Console.WriteLine($"{compareOne} is greater than {compareTwo}!");
+        Console.WriteLine(compareOne);
+        Console.WriteLine(compareTwo);
+
+
     }
 }
 

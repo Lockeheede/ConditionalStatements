@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. If_Statement", "01. If_Statement\01. If_Statement.csproj", "{EE52B77B-D6F9-490A-923D-F4DF9A7C2D39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. IfElseStatement", "02. IfElseStatement\02. IfElseStatement.csproj", "{E2A936EB-0378-4693-82CD-6B34B44C4C88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. IfPractice", "02. IfElseStatement\02. IfPractice.csproj", "{E2A936EB-0378-4693-82CD-6B34B44C4C88}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
