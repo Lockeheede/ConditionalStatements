@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. IfPractice", "02. IfEls
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ElseIf", "03. ElseIf\03. ElseIf.csproj", "{16B25862-73D0-4332-98D9-1D4E2A0D2BF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. ElseIfPractice", "04. ElseIfPractice\04. ElseIfPractice.csproj", "{44AA8CAF-2E35-426E-833B-E3A629C84F65}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{16B25862-73D0-4332-98D9-1D4E2A0D2BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16B25862-73D0-4332-98D9-1D4E2A0D2BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16B25862-73D0-4332-98D9-1D4E2A0D2BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44AA8CAF-2E35-426E-833B-E3A629C84F65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44AA8CAF-2E35-426E-833B-E3A629C84F65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44AA8CAF-2E35-426E-833B-E3A629C84F65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44AA8CAF-2E35-426E-833B-E3A629C84F65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
