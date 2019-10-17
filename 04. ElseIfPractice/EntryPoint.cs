@@ -42,10 +42,12 @@ class EntryPoint
         Console.WriteLine("First give me a meter amount.");
         double meters = Convert.ToInt32(Console.ReadLine());
         double conversionAmount = 0.0f;
+
         Console.WriteLine("Now give me a conversion. \n" +
             "Use cm, mm, km, dm, or ft. \n" +
             "Make sure to use the two digits or it won't work.");
         string conversionChoice = Console.ReadLine();
+
         if(conversionChoice.Length !=2)
         {
             Console.WriteLine("Pretty sure that's the wrong symbol");
