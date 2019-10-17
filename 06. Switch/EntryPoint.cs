@@ -53,6 +53,7 @@ class EntryPoint
                 break;
         }
         Console.WriteLine("This is an estimate! The computers can only handle so many numbers!");
+        Console.WriteLine("The end.");
         Console.WriteLine();
     }
 }
