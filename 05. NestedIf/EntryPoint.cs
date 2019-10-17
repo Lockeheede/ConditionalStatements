@@ -138,6 +138,7 @@ class Program
         int a = 0; int b = 0; int c = 0;
         string sorted = string.Empty;
 
+
         Console.WriteLine("Ordering system. Give me three integers and I will put them in order from smallest to largest.");
         Console.Write("First Integer: ");
         a = Convert.ToInt32(Console.ReadLine());
@@ -146,12 +147,14 @@ class Program
         Console.Write("Third Integer: ");
         c = Convert.ToInt32(Console.ReadLine());
 
+
+        //In this case you are using multiple booleans and nested ifs. You are also using concatenation to add to the empty sorted string
         if (a > b && a > c)
         {
             sorted = a + " ";
             if (b > c)
                 sorted = sorted + b + " " + c;
-            else if (c > b)
+            else
                 sorted = sorted + c + " " + b;
         }
         else if (b > a && b > c)
@@ -159,7 +162,7 @@ class Program
             sorted = b + " ";
             if (a > c)
                 sorted = sorted + a + " " + c;
-            else if (a < c)
+            else
                 sorted = sorted + c + " " + a;
         }
         else if (c > a && c > b)
@@ -167,7 +170,7 @@ class Program
             sorted = c + " ";
             if (a > b)
                 sorted = sorted + a + " " + b;
-            else if (a < b)
+            else
                 sorted = sorted + b + " " + a;
         }
         else if (a == b || a == c || b == c)
