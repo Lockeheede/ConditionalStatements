@@ -29,7 +29,8 @@ class EntryPoint
 
         Console.WriteLine();
 
-        Console.WriteLine("Enter a password. It must be at least 8 characters, have at least one capital letter, one number:");
+        Console.WriteLine("Enter a password. It must be at least 8 characters, \n" +
+            "have at least one capital letter and one number:");
         tempPassword = Console.ReadLine();
 
         Console.WriteLine();
